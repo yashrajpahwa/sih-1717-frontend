@@ -38,7 +38,7 @@ function App() {
               <FaMicrophoneAlt
                 className={`rounded-full shadow-md  ${
                   !micinput && `hover:shadow-emerald-500`
-                } border p-10 transition-all duration-200 ${
+                } border p-10 transition-all duration-300 ${
                   micinput &&
                   `shadow-gray-500 transition-all duration-100 hover:shadow-red-700`
                 }`}
@@ -50,7 +50,7 @@ function App() {
               <FaMicrophoneAltSlash
                 className={`rounded-full shadow-md  ${
                   !micinput && `hover:shadow-emerald-500`
-                } border p-10 transition-all duration-200 ${
+                } border p-10 transition-all duration-300 ${
                   micinput &&
                   `shadow-gray-500 transition-all duration-100 hover:shadow-red-700`
                 }`}
