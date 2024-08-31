@@ -33,7 +33,7 @@ function App() {
     <>
       <div className="flex flex-col min-h-screen items-center justify-center">
         <button onClick={handleClick}>
-          {mediaInput ? (
+          {!mediaInput ? (
             <>
               <FaMicrophoneAlt
                 className={`rounded-full shadow-md  ${
