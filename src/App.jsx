@@ -33,15 +33,31 @@ function App() {
     <>
       <div className="flex flex-col min-h-screen items-center justify-center">
         <button onClick={handleClick}>
-          <FaMicrophoneAlt
-            className={`rounded-full shadow-md  ${
-              !micinput && `hover:shadow-emerald-500`
-            } border p-10 transition-all duration-200 ${
-              micinput &&
-              `shadow-gray-500 transition-all duration-100 hover:shadow-red-700`
-            }`}
-            size={166}
-          />
+          {mediaInput ? (
+            <>
+              <FaMicrophoneAlt
+                className={`rounded-full shadow-md  ${
+                  !micinput && `hover:shadow-emerald-500`
+                } border p-10 transition-all duration-200 ${
+                  micinput &&
+                  `shadow-gray-500 transition-all duration-100 hover:shadow-red-700`
+                }`}
+                size={166}
+              />
+            </>
+          ) : (
+            <>
+              <FaMicrophoneAltSlash
+                className={`rounded-full shadow-md  ${
+                  !micinput && `hover:shadow-emerald-500`
+                } border p-10 transition-all duration-200 ${
+                  micinput &&
+                  `shadow-gray-500 transition-all duration-100 hover:shadow-red-700`
+                }`}
+                size={166}
+              />
+            </>
+          )}
         </button>
 
         <div className={`${!mediaInput && `hidden`} absolute bottom-16`}>
